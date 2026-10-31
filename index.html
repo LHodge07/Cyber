@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness Tips</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef2f5;
+            color: #222222;
+            margin: 0;
+        }
+ 
+        header {
+            background-color: #0b1f33;
+            color: #2ed3b7;
+            text-align: center;
+            padding: 20px;
+        }
+ 
+        header h1 {
+            margin: 0;
+            font-size: 34px;
+        }
+ 
+        header p {
+            color: white;
+            margin: 8px 0 0 0;
+        }
+ 
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+ 
+        .box {
+            background-color: white;
+            border: 1px solid #ccd5dd;
+            border-radius: 6px;
+            padding: 10px 20px 20px 20px;
+        }
+ 
+        .list-box,
+        .details-box {
+            min-width: 300px;
+        }
+ 
+        .details-box {
+            max-width: 400px;
+        }
+ 
+        h3 {
+            color: #0b1f33;
+            font-size: 17px;
+            border-bottom: 2px solid #2ed3b7;
+            padding-bottom: 6px;
+        }
+ 
+        li {
+            margin-bottom: 6px;
+        }
+ 
+        #choice {
+            padding: 5px;
+            border: 1px solid #9aa3ad;
+            border-radius: 4px;
+        }
+ 
+        button {
+            background-color: #0b1f33;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 7px 12px;
+        }
+ 
+        .details-info {
+            line-height: 1.5;
+        }
+ 
+        .image-area {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+ 
+        .image-area img {
+            width: 400px;
+            max-width: 90%;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cybersecurity Awareness Tips</h1>
+        <p>Stay curious. Stay secure.</p>
+    </header>
+ 
+    <div class="wrapper">
+
+        <div class="box menu-box">
+            <h3>What would you like to do?</h3>
+            <ul>
+                <li>Create a tip - C</li>
+                <li>Read the details for a tip - R</li>
+                <li>Update the details for a tip - U</li>
+                <li>Delete a tip - D</li>
+            </ul>
+            <input type="text" id="choice" maxlength="1" size="3">
+            <button onclick="act()">Submit your choice of action</button>
+        </div>
+ 
+        <div class="box list-box">
+            <h3>Current List Of Security Tips</h3>
+            <ul class="list-all"></ul>
+        </div>
+ 
+        <div class="box details-box">
+            <h3>Details</h3>
+            <p class="details-info">Choose an action to see details here.</p>
+        </div>
+    </div>
+
+    <div class="image-area">
+        <img src="cyber.png" alt="Cybersecurity Awareness Month">
+    </div>
+ 
+    <script src="cyber.js"></script>
+</body>
+</html>
